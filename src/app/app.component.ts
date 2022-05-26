@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Airtable } from 'ngx-airtable';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project2';
+  constructor(private at1: Airtable){
+  }
+  
 }
